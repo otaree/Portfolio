@@ -4,7 +4,7 @@ import Home from "./views/Home.vue";
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: "/",
@@ -19,6 +19,18 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/About.vue")
+    },
+    {
+      path: "/contact",
+      name: "contact",
+      component: () => import("./views/Contact.vue")
+    },
+    {
+      path: "/projects",
+      name: "projects",
+      component: () => import("./views/Projects.vue")
     }
   ]
 });
+
+export default router;

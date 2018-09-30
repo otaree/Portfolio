@@ -1,29 +1,35 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <section class="hero is-black is-fullheight">
+  <!-- Hero head: will stick at the top -->
+  <div class="hero-head">
+    <navbar />
   </div>
+
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+      <router-view />
+  </div>
+
+  <!-- Hero footer: will stick at the bottom -->
+  <div class="hero-foot">
+    <Footer />
+  </div>
+</section>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<script>
+import Navbar from "@/components/Navbar.vue";
+import Footer from "@/components/Footer.vue";
+
+export default {
+  components: {
+    Navbar,
+    Footer
   }
-}
+};
+</script>
+
+
+<style lang="sass">
+@import '~bulma';
 </style>
