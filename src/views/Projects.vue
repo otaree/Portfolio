@@ -3,7 +3,7 @@
     <h1 class="title has-text-centered" data-aos="fade-right">Projects</h1>
     <hr class="underline" data-aos="fade-left">
 
-    <div class="columns is-centered  is-multiline">
+    <div class="columns mt-1 is-centered  is-multiline">
       <div data-aos="fade-up-right" class="column is-6">
           <img src="../assets/images/foodly.jpg">
       </div>
@@ -253,5 +253,9 @@ hr.underline {
   margin: 0 auto;
   margin-bottom: 3%;
   background-image: hsl(0, 0%, 100%);
+}
+
+.mt-1 {
+  margin-top: 5%;
 }
 </style>

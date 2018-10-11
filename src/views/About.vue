@@ -2,14 +2,10 @@
   <div class="container">
       <h1 class="title has-text-centered" data-aos="fade-right">About</h1>
       <hr data-aos="fade-left">
-      <div class="hero">
-      <div class="hero-body">
-        <div class="content" data-aos="fade-right">
-          <p class="is-size-5 has-text-info has-text-weight-light has-text-left">A self-taught developer, I started coding more than 2 years ago. It quickly grew into a passion.</p>
-          <p class="is-size-5 has-text-info has-text-weight-light has-text-left">I love challenges, new projects, and solving problems.</p>
+        <div class="intro content" data-aos="fade-right">
+          <p class="is-size-5 has-text-centered has-text-info has-text-weight-light ">A self-taught developer, I started coding more than 2 years ago. It quickly grew into a passion.</p>
+          <p class="is-size-5 has-text-centered has-text-info has-text-weight-light ">I love challenges, new projects, and solving problems.</p>
       </div>
-      </div>
-    </div>
     
 
       <h3 class="has-text-centered is-size-5 has-text-weight-bold">Tools & frameworks I love to use</h3>
@@ -142,5 +138,10 @@ hr {
 
 .about-tool-framework ul li {
   list-style-image: url("../assets/images/bullet.png");
+}
+
+.intro {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 </style>
